@@ -1,0 +1,25 @@
+{
+  "name": "node-geek-simulate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crane0/node-geek-simulate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crane0/node-geek-simulate/issues"
+  },
+  "homepage": "https://github.com/crane0/node-geek-simulate#readme",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-mount": "^4.0.0",
+    "koa-static": "^5.0.0"
+  }
+}
