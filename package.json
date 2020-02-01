@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/crane0/node-geek-simulate#readme",
   "dependencies": {
+    "easy_sock": "^0.3.8",
     "koa": "^2.11.0",
     "koa-mount": "^4.0.0",
-    "koa-static": "^5.0.0"
+    "koa-static": "^5.0.0",
+    "protocol-buffers": "^4.1.0"
   }
 }
