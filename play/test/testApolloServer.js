@@ -1,9 +1,10 @@
 /* 
   apollo-server-koa 官网给的例子，
-  在打开的页面中，输入 query{hello} 运行即可。
+  在打开的页面（模拟发送 post）中，输入 query{hello} 运行即可。
   
-  没有解决的问题：
-  如何自定义发送请求，而不是靠运行后的那个页面。
+  因为使用的是 post 请求，所以也可以借助插件发送。
+  url: http://localhost:4000/graphql
+  body: {"query":"query{hello}"}
 */
 const Koa = require('koa');
 const { ApolloServer, gql } = require('apollo-server-koa');
