@@ -14,3 +14,7 @@ node detal/index.js
 ```
 http://localhost:3000/?columnid=232
 ```
+
+# 3，列表页
+
+`app.jsx` 是用于向 `list/components/container` 传 props 用的。
