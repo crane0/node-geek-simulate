@@ -7,6 +7,7 @@ const app = new koa()
 
 // 如果匹配到静态文件，就在指定目录中返回。
 // 如果没有这个逻辑，则所有的请求都会返回 source/index.htm
+console.log(__dirname + '/source/')
 app.use(
   static(__dirname + '/source/')
 )
@@ -17,4 +18,5 @@ app.use(
   })
 )
 
-app.listen(4000)
+// app.listen(4000)
+module.exports = app

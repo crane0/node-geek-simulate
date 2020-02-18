@@ -15,7 +15,7 @@ const getApp = require('./app.jsx')
 const template = require('./template')(__dirname + '/index.htm')
 
 app.use(
-  mount('/static', static(__dirname + '/source'))
+  mount('/static', static(__dirname + '/source/'))
 )
 
 app.use(
@@ -47,4 +47,5 @@ app.use(async(ctx) => {
     })
 })
 
-app.listen(3000)
+// app.listen(3000)
+module.exports = app

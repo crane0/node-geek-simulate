@@ -1,20 +1,3 @@
-# 2，详情页
+将 4 个组件的入口统一为了 `entry.js`，
 
-1，运行 server 端
-```
-node detal/server.js  
-```
-
-2，运行 client 端
-```
-node detal/index.js
-```
-
-3，页面访问
-```
-http://localhost:3000/?columnid=232
-```
-
-# 3，列表页
-
-`app.jsx` 是用于向 `list/components/container` 传 props 用的。
+注意，访问路径为 `localhost:3000/download/`，最后有个斜杠！否则资源为请求不到。
