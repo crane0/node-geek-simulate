@@ -18,8 +18,11 @@ app.use(
     // 如果 body 是 buffer 类型，可能会直接下载，所以需要指定类型。
     ctx.type = 'html'
     ctx.body = buffer
+    tempArr.push(buffer)
   })
 )
+
+const tempArr = []
 
 // app.listen(4000)
 module.exports = app
