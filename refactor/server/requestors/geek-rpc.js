@@ -15,7 +15,7 @@ module.exports = {
         easySock = new EasySock({
             ip: config.ip,
             port: config.port,
-            timeout: 500,
+            timeout: 1500,
             keepAlive: true
         })
 

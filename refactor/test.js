@@ -1,11 +1,3 @@
-const requestFactory = require('./server/request-factory')
+const server = require('./server/run')
 
-requestFactory.registerProtocol('geek-rpc', require('./server/requestors/geek-rpc'))
-requestFactory.registerProtocol('http', require('./server/requestors/http'))
-
-const business = require('./business/page.data')
-const requestDetail = requestFactory(business.detail)
-const requestArticles = requestFactory(business.articles)
-
-requestDetail({ columnid: 1 }).then(res => console.log(11111))
-requestArticles().then(res => console.log(res))
+server(require('./business/app'))

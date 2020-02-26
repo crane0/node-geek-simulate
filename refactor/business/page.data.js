@@ -2,17 +2,20 @@
 // 数据请求模块会调用下面的业务代码，转换为真正的程序逻辑，将一些不希望新手了解的细节屏蔽。
 
 module.exports = {
-  detail: {
+  column: {
     // header 名字？
     protocol: 'geek-rpc',
     // 每个rpc调用，也就是微服务都是不一样的。
     ip: '127.0.0.1',
     port: 4000,
     // 协议名称
-    protobufFile: `${__dirname}/../proto/detail.proto`,
+    protobufFile: `${__dirname}/proto/detail.proto`,
     // 请求和返回结构体的名字
     requestStruct: 'ColumnRequest',
     responseStruct: 'ColumnResponse',
+    then(res) {
+      return res.column;
+    }
   },
   articles: {
     protocol: 'http',
