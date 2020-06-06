@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/crane0/node-geek-simulate#readme",
   "dependencies": {
-    "apollo-server-koa": "^2.9.16",
+    "apollo-server-koa": "^2.14.2",
     "easy_sock": "^0.3.8",
     "graphql": "^14.6.0",
     "koa": "^2.11.0",
